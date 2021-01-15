@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Order Menu</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <a asp-action="CreateCart">Generate a Order in @ViewBag.storeLocation</a>
+    </div>
+    <div class="col-md-4">
+        <a asp-action="ListCustomerOrders">List the customer Orders</a>
+    </div>
+    <div class="col-md-4">
+        <a asp-action="ListStoreOrders">List all the Orders from @ViewBag.storeLocation</a>
+    </div>
+
+</div>
