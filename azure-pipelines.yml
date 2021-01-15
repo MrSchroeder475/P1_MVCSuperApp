@@ -32,3 +32,11 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+
+- task: SonarCloudPrepare@1
+  inputs:
+    SonarCloud: 'sonarcloudtest1'
+    organization: 'mrscrhoeder'
+    scannerMode: 'MSBuild'
+    projectKey: 'mrscrhoeder_P1_MVCSuperApp'
+    projectName: 'P1_MVCSuperApp'
